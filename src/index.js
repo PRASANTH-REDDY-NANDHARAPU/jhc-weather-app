@@ -19,9 +19,7 @@ const WeatherApp = () => {
     const urlLast="&appid=bfb12dd01a60ae5bd8c4e6c3e73af357"
     const urlMiddle=search
     const url=urlFirst+urlMiddle+urlLast
- 
-
-// console.log(value)
+ console.log('this is day to 200 lines')
   return (
     <div className="weather-container">
       <div className="search-container">
@@ -33,8 +31,6 @@ const WeatherApp = () => {
               const data=await fetch(url)
               const weatherData= await data.json()
               console.log(url)
-
-              // const totalData =weatherData
               const temp=Math.floor(weatherData.main.temp)-273
               const place=weatherData.name
               const longitude=weatherData.coord.lon
